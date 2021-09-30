@@ -1,0 +1,52 @@
+# variable -> Public >> accessed can be from anywhere
+# _variable -> Protected >> accessed can be only from sub(child) class
+# __variable -> protected >> DOES NOT ACCESSED CAN BE FROM ANY WHERE!
+
+# illustration of public access modifier in a class
+class Public:
+    def __init__(self, name):
+        self.name = name
+
+public_access_modifier = Public("Rohan Das")
+print(public_access_modifier.name)
+
+# as it's a public variable we can modify it anywhere
+public_access_modifier.name = "Hari Patel"
+print(public_access_modifier.name) #it will print Hari Patel as it is overrided
+print()
+print(dir(public_access_modifier)) #this will not print all of the attributes given to the constructor
+print()
+
+
+# illustration of protected access modifier in a class
+class protected:
+    def __init__(self, name):
+        self._name = name
+
+protected_access_modifier = protected("Jackie Chan")
+print(protected_access_modifier._name)
+
+# variable starting with the _ is denotes that this is protected variable and we can't change it anywhere we can change it only in the subclass of the class or in the child class of the parent class
+
+class Child_protected(protected):
+    def __init__(self, name, city):
+        super().__init__(name)
+        self.city = city
+
+child_protected = Child_protected("Name to be changed", "Ahmedabad")
+child_protected.name = "Name changed!" #changed inside the sub(child) class
+print(child_protected.name)
+print()
+print(dir(protected_access_modifier)) #this will not print all of the attributes given to the constructor
+print()
+
+# illustration of private access modifier
+class Private:
+    def __init__(self, name):
+        self.__name = name
+
+raj = Private("Raj Shukla")
+print(raj.__name) #this will throws an error that 'Private' object has no attribute '__name'
+print()
+print(dir(raj)) #this will not print any of the attribute given to the constructor
+print()

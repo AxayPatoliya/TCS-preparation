@@ -1,0 +1,68 @@
+INFIX, PROFIX & SUFFIX are notations to write an expression
+
+1.) INFIX -
+format: operand1 <operator> operand2
+examples: a+b, a-b, a*b, a/b
+
+2.) PREFIX - 
+format: <operator> operand1 operand2
+examples: +ab, -ab, *ab, /ab
+
+3.) POSTFIX - 
+format: operand1 operand2 <operator>
+examples: ab+, ab-, ab*, ab/
+
+EXAMPLES
+
+infix expression -> a * (b + c) * d
+postfic expression -> a * (bc+) * d
+                   =  (abc+*)*d
+                   =  abc+*d*
+
+
+ALWAYS USE "BODMAS" RULE FOR CONVERSION TO PREFIX ANS POSTFIX
+
+Q-1| convert infix equation x-y*z to prefix and postfix.
+sol| 
+
+prefix conversion --
+step - 1: parenthesize the equation
+=(x-(y*z))
+step - 2: solve according to the BODMAS rule & put square brackets around the solved terms...
+=(x-[*yz])
+=-x*yz
+
+postfix conversion --
+=(x-(y*z))
+=(x-[yz*])
+=xyz*-
+
+Q-2| convert infix equation p-q-r/a to prefix and postfix.
+sol|
+
+prefix conversion --
+=((p-q)-(r/a)) according to the associative property
+=((p-q)-[/ra])
+=([-pq]-[/ra])
+=--pq/ra
+
+postfix conversion --
+=((p-q)-(r/a))
+=((p-q)-[ra/])
+=([pq-]-[ra/])
+=pq-ra/-
+
+When we get expression which is already parenthesized then we don't have to do it by ourself wether it's wrong or right.
+
+Q-3| convert infix equation (m-n)*(p-q) to prefix and postfix.
+sol|
+
+prefix conversion --
+=((m-n)*(p-q))
+=([-mn]*[-pq])
+=*-mn-pq
+
+postfix conversion --
+=((m-n)*(p-q))
+=([mn-]*[pq-])
+=mn-pq-*

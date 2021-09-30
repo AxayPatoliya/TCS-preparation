@@ -1,0 +1,33 @@
+Difference between Procedural programming and Object Oriented programming
+- main Difference is Data security
+- in Procedural programming there's no data security
+- everything is visible to other programs
+- other program can access the information directly
+
+- in OOPs completely secure & as a programmer we have to implement the security
+
+why there's no security in Procedural programming of C language ?
+-> just because Access Modifiers(Private, Protected, Public) concept is not there
+-> we can't set the access specifications/permissions on the data in C language
+
+- in Procedural programming we can access the functions from one file to another because we can't define the private function
+but, in OOP we can define the private function and that is not accessible to another file
+
+- if we want to access the information of private function in OOP then we have to seek for the permission
+directly we can't access it!
+
+Then why we use C language in most of the embedded applications?
+-> Main reason is that security is not required for every application
+-> Example-Calculator(we don't need to secure the embedded program for Calculator)
+-> If security matters then we go for Object Oriented Programming
+
+Example of Procedural Programming language - C
+Example of Object Oriented Programming language - C++, JAVA, Python etc.
+
+How we can secure the data using OOP?
+-> By using the Access Modifiers(Private, Public, Protected)
+
+Then what is the use of C language?
+-> Main reason is that security is not required for every application
+-> Example-Calculator(we don't need to secure the embedded program for Calculator)
+-> If security matters then we go for Object Oriented Programming
