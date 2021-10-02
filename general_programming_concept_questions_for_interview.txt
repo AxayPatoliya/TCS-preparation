@@ -8,3 +8,11 @@ various stages of SDLC -
 4. build(developing)
 5. testing
 6. deployment
+
+SDLC Models-
+1. Waterfall Model
+2. Iterative Model
+3. Spiral Model
+4. V-Model
+5. Big Bang Mode
+6. OSI Model(breaks task into 7 small parts and solves it individually)

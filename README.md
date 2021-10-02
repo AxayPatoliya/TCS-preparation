@@ -1,5 +1,5 @@
 # C-Preparation-for-TCS
-C programming concepts oriented to the TCS Ninja exam.
+Programming concepts oriented to the TCS Ninja exam & interview.
 
 ## Programming concepts helpful for the technical round/exam with comments.
 
